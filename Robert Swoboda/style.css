@@ -43,22 +43,24 @@ body {
 .nav ul {
     display: grid;
     height: 2rem;
-    align-content: center;
+    align-items: center;
     grid-template-columns:repeat(7,1fr);
     list-style-type: none;
     text-align: center;
     border: 1px solid #666;
     background-color: #555;
 }
-.nav  li {
-    height: 100%;
-    text-decoration: none;
-    border-right: 2px dotted #eee;
-}
 .navbar{
+    display: grid;
+    align-items: center;
     height: 100%;
     color: #fff;
     text-decoration: none;
+    border-right: 2px dotted #eee;
+}
+.nav  li {
+    text-decoration: none;
+   
 }
 .navbar:hover {
     background-color: #444;
@@ -93,12 +95,6 @@ body {
 
 .box1 {
     text-align: center;
-    background-image: url(img/foto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20rem;
-    border-radius: 30%;
-    
 }
 .box2 {
     padding: 2.5rem;
@@ -117,7 +113,7 @@ body {
 .box3 {
     display: flex;
     flex-flow: wrap;
-    padding: 1rem;
+    padding: 2rem;
     align-self: stretch;
     align-items: center;
     justify-content: center;
@@ -142,15 +138,21 @@ body {
     margin-top: 3rem;
     width: 100%;
 }
+#portfolio {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template: 1fr / auto auto auto;
+
+}
 .nag2 {
     font-family: 'Abel ' ,sans-serif;
     color: #222;
     font-size: 2rem;
 }
 .foto {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    border-radius: 30%;
 }
 .podpis {
     position: absolute;
@@ -163,6 +165,7 @@ body {
 }
 .box5 {
     width: 100%;
+
 }
 
 
