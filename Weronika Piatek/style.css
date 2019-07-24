@@ -1,7 +1,11 @@
-*{
+* {
     margin: 0;
 }
 
 body {
-    background-color: #333;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    background-color: #4a4a4a;
+    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
