@@ -4,7 +4,7 @@
 }
 
 :root {
-    --blue: #adcfe6;
+    --blue: #c1ccd3;
 }
 body {
     background-image: url(img/leaves.png);
@@ -16,6 +16,7 @@ body {
     border: 5px solid red;
     justify-content: center;
     align-items: center;
+    
 }
 #header {
     display:flex;
@@ -29,22 +30,30 @@ body {
     font-size: 4.5rem;
     font-family: 'Abel' , sans-serif;
     text-transform: uppercase;
-    text-shadow: 3px 1px 4px #545454;
-    color: #efefff;
+    text-shadow: 3px 1px 4px #545454a6;
+    color: #555;
     letter-spacing: 0.25rem;
 }
 .nav{
-    border: red;
-    width:90%; 
-    position: sticky;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
+    left: 0;
 }
-nav ul {
+.nav ul {
     display: grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-columns:repeat(7,1fr);
     list-style-type: none;
+    text-align: center;
+    /* border: 1px solid ; */
+    padding: 0.65rem;
+    background-color: #555;
+    color: white;
 }
-.nav > li {
+.nav  li {
     text-decoration: none;
+    border-right: 2px dotted #eee;
 }
 #content {
     display: flex;
@@ -56,7 +65,8 @@ nav ul {
     display: flex;
     justify-content: center;
     width:100%;
-    background-image: url(img/footer_lodyas.png); 
+    background-image: url(img/footer_lodyas.png);
+    bottom: 0;
 }
 .box {
     width: 30%;
@@ -64,12 +74,15 @@ nav ul {
     margin: 10px;
     box-sizing: border-box;
 }
+.box1 {
+    height: 3rem;
+}
 .end {
   font-size: 1.25rem;  
 }
 
 
 ::selection {
-   color: yellow;
+   color: #e9e51bee;
    background-color: var(--blue);
 }
