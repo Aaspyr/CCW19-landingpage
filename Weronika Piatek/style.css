@@ -1,88 +1,93 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+   margin: 0;
+   box-sizing: border-box;
 }
 
 body {
-    font-family: 'Play', sans-serif;
-    color: #fff;
-    background-color: #4a4a4a;
-    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+   font-family: 'Play', sans-serif;
+   color: #fff;
+   background-color: #4a4a4a;
+   background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .logo {
-    width: 28rem;
-    height: 5rem;
-    font-weight: 700;
-    font-size: 3rem;
-    letter-spacing: 0.05em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-
-.letsgo {
-    font-size: 0.3em;
-    text-align: center;
-    padding-top: 0.3em;
-    font-weight: 400;
-    letter-spacing: normal;
-    opacity: 0;
-    transition: 0.5s;
-    position: absolute;
-    top: 4.5rem;
-}
-
-.logo:hover .letsgo {
-    opacity: 1;
-}
-
-.w:hover {
-   color: #5B4CFF; 
-}
-.e:hover {
-   color: #EF2B86; 
-}
-.r:hover {
-   color: #D107FF; 
-}
-.o:hover {
-   color: #EFAD1F; 
-}
-.n:hover {
-   color: #47E8F7; 
-}
-.i:hover {
-   color: #5B4CFF; 
-}
-.k:hover {
-   color: #EFAD1F; 
-}
-.a:hover {
-   color: #D107FF; 
-}
-.p:hover {
-   color: #EF2B86; 
-}
-.t:hover {
-   color: #47E8F7; 
-}
-
-.logo {
-    padding: 0.5rem;    
+   width: 27rem;
+   height: 5rem;
+   font-weight: 700;
+   font-size: 3rem;
+   letter-spacing: 0.05em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+   border: 0.1rem solid #C2C2C2;
+   padding: 0.5rem;
+   transition: 0.5s;
 }
 
 .logo:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+   cursor: pointer;
+   transform: scale(1.05);
 }
+
+.letsgo {
+   font-size: 0.3em;
+   text-align: center;
+   padding-top: 0.3em;
+   font-weight: 400;
+   letter-spacing: normal;
+   opacity: 0;
+   transition: 1.5s;
+   position: absolute;
+   top: 6rem;
+}
+
+.logo:hover .letsgo {
+   opacity: 1;
+}
+
+.link {
+   color: #FFF;
+   text-decoration: none;
+}
+
+.w:hover {
+  color: #5B4CFF; 
+}
+.e:hover {
+  color: #EF2B86; 
+}
+.r:hover {
+  color: #D107FF; 
+}
+.o:hover {
+  color: #EFAD1F; 
+}
+.n:hover {
+  color: #47E8F7; 
+}
+.i:hover {
+  color: #5B4CFF; 
+}
+.k:hover {
+  color: #EFAD1F; 
+}
+.a:hover {
+  color: #D107FF; 
+}
+.p:hover {
+  color: #EF2B86; 
+}
+.t:hover {
+  color: #47E8F7; 
+}
+
