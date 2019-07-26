@@ -10,3 +10,100 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    
+}
+
+.pic {
+   
+    width: 95%;
+    height: 65%;
+    overflow: hidden;
+    background-image: url(pic.jpg); 
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.logo {
+    width: 27rem;
+    height: 5rem;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    border: 0.2rem solid #C2C2C2;
+    padding: 0.5rem;
+    
+}
+
+
+.about {
+    width: 70%;
+    height: 30%;
+    background-color: #C2C2C2;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.par1 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.social {
+    border: 0.2rem solid #C2C2C2;
+    width: 25%;
+    height: 30%;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fb {
+    height: 33.3%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.git {
+    height: 33.3%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta {
+    height: 33.3%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    font-size: 0.9rem;
+    color: #C2C2C2;
+    width: 95%;
+    height: 4.5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    
+}
