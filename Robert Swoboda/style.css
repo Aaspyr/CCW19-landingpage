@@ -68,7 +68,7 @@ body {
 #content {
     display: flex;
     flex-wrap: wrap;
-    width: 71.5%;
+    width: 70%;
     padding: 0;
     background: white;
     border-right: 2px solid #eee;
@@ -77,13 +77,6 @@ body {
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     justify-content: center;
-}
-#footer{
-    display: flex;
-    justify-content: center;
-    width:100%;
-    background-image: url(img/footer_lodyas.png);
-    bottom: 0;
 }
 .box {
     margin: 5rem 0.5rem 0 0.5rem;
@@ -109,6 +102,11 @@ body {
 }
 .text2 {
     font-size: 0.8rem;
+}
+.nag2 {
+    font-family: 'Abel ' ,sans-serif;
+    color: #222;
+    font-size: 2rem;
 }
 .box3 {
     display: flex;
@@ -141,34 +139,69 @@ body {
 #portfolio {
     display: grid;
     grid-gap: 2rem;
-    grid-template: 1fr / auto auto auto;
+    grid-template: 1fr / 1fr 1fr 1fr;
 
 }
-.nag2 {
-    font-family: 'Abel ' ,sans-serif;
-    color: #222;
-    font-size: 2rem;
+.pf {
+    width: 30%;
+    height: 50%;
 }
 .foto {
     width: 90%;
     height: 90%;
     border-radius: 30%;
 }
-.podpis {
-    position: absolute;
-    display: block;
-    font-size: 1rem;
-    
-}
-.end {
-  font-size: 1.25rem;  
-}
 .box5 {
     width: 100%;
+    padding: 1rem;
 
 }
+#footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    background-image: url(img/footer_lodyas.png);
+    bottom: 0;
+    border-top: 2px solid #666;
+    padding: 0.2rem;
+}
+.social {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 1rem; 
+}
+.end {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: center;
+    color: white;
+    font-size: 1.25rem;  
+}
+.socialicon {
+    font-size: 1.7rem;
+    transition: transform 0.4s ease-in-out; 
+}
+.socialicon:hover {
+    transform: scale(1.5,1.5);
 
+}
+.social a {
+    color:white;
 
+}
+.end > h2 {
+    display: block;
+    font-size: 1.5rem;
+}
+.end > p {
+    font-size: 1.1rem;
+}
 ::selection {
    color: #e9e51bee;
    background-color: #3452fc;
