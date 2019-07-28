@@ -157,11 +157,14 @@ body {
 
 }
 #footer{
-    position: relative;
-    display: flex;
+   
+    display: grid;
+    grid-template: 1fr /1fr 1fr 1fr;
     justify-content: center;
+    align-items: center;
     width:100%;
     background-image: url(img/footer_lodyas.png);
+    position: relative;
     bottom: 0;
     border-top: 2px solid #666;
     padding: 0.2rem;
@@ -171,37 +174,43 @@ body {
     flex: 1;
     align-items: center;
     justify-content: space-around;
+    justify-items: center;
     color: white;
-    font-size: 1rem; 
-}
-.end {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: baseline;
-    align-content: center;
-    color: white;
-    font-size: 1.25rem;  
 }
 .socialicon {
-    font-size: 1.7rem;
-    transition: transform 0.4s ease-in-out; 
-}
-.socialicon:hover {
-    transform: scale(1.5,1.5);
-
+    font-size: 1.3rem;
+    transition: transform 0.5s ease-in-out; 
 }
 .social a {
     color:white;
 
 }
-.end > h2 {
-    display: block;
-    font-size: 1.5rem;
+.socialicon:hover {
+    transform: scale(1.5,1.5);
+
 }
-.end > p {
-    font-size: 1.1rem;
+.author {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    align-self: end;
 }
+.end {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+}
+
+.endit > h2 {
+    font-size: 1.0rem;
+}
+.endit > p {
+    font-size: 0.9rem;
+}
+
 ::selection {
    color: #e9e51bee;
    background-color: #3452fc;
