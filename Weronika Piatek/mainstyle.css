@@ -103,6 +103,7 @@ body {
     height: 50%;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    font-size: 0.9rem;               
 }
 
 .social {
@@ -175,4 +176,12 @@ body {
     justify-content: center;
     align-items: flex-end;
     align-self: flex-end;
+}
+
+@media all and (max-width: 648px) {
+    .name {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
+    
 }
