@@ -5,105 +5,174 @@
 
 body {
     font-family: 'Play', sans-serif;
-    color: #fff;
-    background-color: #4a4a4a;
+    color: rgba(74, 74, 74, 1);
+    background-color: rgba(74, 74, 74, 1);
     background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .container {
+    margin-left: 10%;
+    margin-right: 10%; 
     height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: flex-start;
+    align-items: center;
     
+}
+
+.content {
+    height: 25rem;
+    width: 40rem;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 25px 5px rgba(46, 46, 46, 1);
+}
+
+.box1 {
+    border: 0.2rem solid rgba(194, 194, 194, 0.25);
+    height: 95%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+
+.logo {
+    /*border: 0.2rem solid red;*/
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name {
+    width: 50%;
+    height: 90%;
+    color: rgba(96, 96, 96, 1);
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+    border: 0.15rem solid rgba(96, 96, 96, 1);
+    padding: 0.4rem;
+    margin-top: 3%;
+}
+
+.box2 {
+    /*border: 0.2rem solid red;*/
+    height: 75%;
+    width: 85%;
+    display: flex;
+   
+}
+
+.foto {
+    /*border: 0.2rem solid red;*/
+    width: 59%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pic {
-   
-    width: 95%;
-    height: 65%;
-    overflow: hidden;
-    background-image: url(pic.jpg); 
+    /*border: 0.2rem solid red;*/
+    width: 90%;
+    height: 60%;
+    background-image: url(pic.jpg);
     background-size: cover;
-    opacity: 0.7;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+    box-shadow: 0px 0px 10px 3px rgba(194, 194, 194, 1);
 }
-
-.logo {
-    width: 27rem;
-    height: 5rem;
-    font-weight: 700;
-    font-size: 3rem;
-    letter-spacing: 0.05em;
-    text-align: center;
-    border: 0.2rem solid #C2C2C2;
-    padding: 0.5rem;
-    
-}
-
 
 .about {
-    width: 70%;
-    height: 30%;
-    background-color: #C2C2C2;
-    opacity: 0.5;
+    /*border: 0.2rem solid red;*/
+    width: 41%;
+    text-align: justify;
     display: flex;
-    justify-content: center;
     align-items: center;
-
 }
 
-.par1 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #000;
-    text-align: justify;
-    padding: 1rem;
+.text {
+    /*border: 0.2rem solid red;*/
+    height: 50%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .social {
-    border: 0.2rem solid #C2C2C2;
-    width: 25%;
-    height: 30%;
-    opacity: 0.5;
+    /*border: 0.2rem solid red;*/
+    /*border-left: 0.2rem solid rgba(194, 194, 194, 1);*/
+    height: 75%;
+    width: 15%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    
+}
+
+.soc {
+    /*border: 0.2rem solid red;*/
+    border-left: 0.1rem solid rgba(194, 194, 194, 0.5);
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
 .fb {
     height: 33.3%;
-    display:flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    /*border: 0.2rem solid red;*/
 }
 
 .git {
     height: 33.3%;
-    display:flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    /*border: 0.2rem solid red;*/
 }
 
 .insta {
     height: 33.3%;
-    display:flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    /*border: 0.2rem solid red;*/
+}
+
+.icon {
+    padding: 0.2rem;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    background-color: rgba(183, 183, 183, 0.8);
+    color: rgba(255, 255, 255, 1);
+}
+
+.link {
+    color: rgba(183, 183, 183, 1);
 }
 
 .footer {
-    font-size: 0.9rem;
-    color: #C2C2C2;
-    width: 95%;
-    height: 4.5%;
+    /*border: 0.2rem solid red;*/
+    height: 10%;
+    width: 100%;
+    font-size: 0.7rem;
+    color: rgba(183, 183, 183, 1);
     display: flex;
     justify-content: center;
     align-items: flex-end;
     align-self: flex-end;
-    
 }
