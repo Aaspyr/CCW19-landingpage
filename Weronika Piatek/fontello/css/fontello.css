@@ -55,6 +55,6 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-facebook:before { content: '\f300';font-size: 2rem; } /* '' */
-.icon-github-text:before { content: '\f307';font-size: 2rem; } /* '' */
-.icon-instagram-filled:before { content: '\f31f';font-size: 2rem } /* '' */
+.icon-facebook:before { content: '\f300';font-size: 1.2rem; } /* '' */
+.icon-github-text:before { content: '\f307';font-size: 1.2rem; } /* '' */
+.icon-instagram-filled:before { content: '\f31f';font-size: 1.2rem } /* '' */
