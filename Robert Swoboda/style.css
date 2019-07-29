@@ -68,7 +68,7 @@ body {
 #content {
     display: flex;
     flex-wrap: wrap;
-    width: 71.5%;
+    width: 70%;
     padding: 0;
     background: white;
     border-right: 2px solid #eee;
@@ -77,13 +77,6 @@ body {
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
     justify-content: center;
-}
-#footer{
-    display: flex;
-    justify-content: center;
-    width:100%;
-    background-image: url(img/footer_lodyas.png);
-    bottom: 0;
 }
 .box {
     margin: 5rem 0.5rem 0 0.5rem;
@@ -109,6 +102,11 @@ body {
 }
 .text2 {
     font-size: 0.8rem;
+}
+.nag2 {
+    font-family: 'Abel ' ,sans-serif;
+    color: #222;
+    font-size: 2rem;
 }
 .box3 {
     display: flex;
@@ -141,33 +139,77 @@ body {
 #portfolio {
     display: grid;
     grid-gap: 2rem;
-    grid-template: 1fr / auto auto auto;
+    grid-template: 1fr / 1fr 1fr 1fr;
 
 }
-.nag2 {
-    font-family: 'Abel ' ,sans-serif;
-    color: #222;
-    font-size: 2rem;
+.pf {
+    width: 30%;
+    height: 50%;
 }
 .foto {
     width: 90%;
     height: 90%;
     border-radius: 30%;
 }
-.podpis {
-    position: absolute;
-    display: block;
-    font-size: 1rem;
-    
-}
-.end {
-  font-size: 1.25rem;  
-}
 .box5 {
     width: 100%;
+    padding: 1rem;
 
 }
+#footer{
+   
+    display: grid;
+    grid-template: 1fr /1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background-image: url(img/footer_lodyas.png);
+    position: relative;
+    bottom: 0;
+    border-top: 2px solid #666;
+    padding: 0.2rem;
+}
+.social {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    color: white;
+}
+.socialicon {
+    font-size: 1.3rem;
+    transition: transform 0.5s ease-in-out; 
+}
+.social a {
+    color:white;
 
+}
+.socialicon:hover {
+    transform: scale(1.5,1.5);
+
+}
+.author {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    align-self: end;
+}
+.end {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+}
+
+.endit > h2 {
+    font-size: 1.0rem;
+}
+.endit > p {
+    font-size: 0.9rem;
+}
 
 ::selection {
    color: #e9e51bee;
