@@ -1,11 +1,17 @@
-window.onload = function() {
-  const btns = document.getElementsByClassName("navigation-btn");
+$(document).ready(function() {
+  $(".navigation-btn").on("click", function() {
+    $(this)
+      .addClass("active")
+      .siblings("button")
+      .removeClass("active");
 
-  for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      const current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-};
+    const btnClass = $(this)
+      .attr("class")
+      .split(" ")[1];
+
+    $(`.${btnClass}-section`)
+      .addClass("active-section")
+      .siblings("section")
+      .removeClass("active-section");
+  });
+});

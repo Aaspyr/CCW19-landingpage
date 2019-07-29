@@ -95,6 +95,10 @@ body {
   z-index: -1;
   transform: scale(0.98, 0.98) translate(-3%, 0);
   padding: 2rem;
+  display: none;
+  &.active-section {
+    display: block;
+  }
 }
 
 .navigation {

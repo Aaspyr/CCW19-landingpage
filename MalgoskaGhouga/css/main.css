@@ -71,7 +71,10 @@ body {
 .information-card {
   z-index: -1;
   transform: scale(0.98, 0.98) translate(-3%, 0);
-  padding: 2rem; }
+  padding: 2rem;
+  display: none; }
+  .information-card.active-section {
+    display: block; }
 
 .navigation {
   background-color: transparent;
