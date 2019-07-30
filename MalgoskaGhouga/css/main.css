@@ -70,11 +70,16 @@ body {
 
 .information-card {
   z-index: -1;
-  transform: scale(0.98, 0.98) translate(-3%, 0);
   padding: 2rem;
-  display: none; }
-  .information-card.active-section {
-    display: block; }
+  transform: scale(0.98, 0.98) translate(-3%, 0);
+  position: relative; }
+  .information-card--section {
+    position: absolute;
+    top: 1rem;
+    left: -30%;
+    transition: all 0.3s ease; }
+    .information-card--section.active-section {
+      left: 5%; }
 
 .navigation {
   background-color: transparent;
