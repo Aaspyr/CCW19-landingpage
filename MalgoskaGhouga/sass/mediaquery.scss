@@ -1,5 +1,27 @@
-@media screen and (min-width: 320px) and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   .wrapper {
-    flex-direction: column;
+    display: block;
+    position: absolute;
+    height: auto;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 10%;
+  }
+
+  .information-card {
+    transform: scale(1, 1) translate(0, 0);
+  }
+  .main-profile-card {
+    max-width: 100%;
+    height: 500px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .information-card--section {
+    position: static;
   }
 }
