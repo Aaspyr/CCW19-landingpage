@@ -97,12 +97,30 @@ p {
     a {
       font-size: 0.7rem;
       text-transform: uppercase;
-      color: $color-grey-dark;
+      color: $color-bck;
       font-weight: 600;
       text-decoration: none;
-      transition: color 0.3s ease;
+      padding: 5px 20px;
+      border-radius: 50px;
+      background: $color-grey-dark;
+      position: relative;
+      transition: all 0.3s ease;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -3px;
+        bottom: -3px;
+        left: -3px;
+        right: -3px;
+        border-radius: 50px;
+        border: 1px solid $color-grey-dark;
+      }
       &:hover {
-        color: $color-secondary;
+        background: $color-secondary;
+        &:after {
+          border: 1px solid $color-secondary;
+        }
       }
     }
   }
@@ -138,6 +156,11 @@ p {
     &.active-section {
       left: 5%;
     }
+  }
+  &__about-pict {
+    height: 50%;
+    width: 100%;
+    background: url(../img/bck-photo.jpg) no-repeat right top / cover;
   }
 }
 
