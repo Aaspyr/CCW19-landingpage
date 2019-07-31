@@ -13,6 +13,7 @@
     transform: scale(1, 1) translate(0, 0);
     &--section {
       visibility: visible;
+      transform: translate(0, 0);
     }
   }
   .main-profile-card {

@@ -212,12 +212,13 @@ p {
     padding: 1.8rem;
     position: absolute;
     top: 1rem;
-    left: -100%;
+    left: 5%;
     max-width: 100%;
+    transform: translate(-100%, 0);
     visibility: hidden;
     transition: all 0.3s ease; }
     .information-card--section.active-section {
-      left: 5%;
+      transform: translate(0, 0);
       visibility: visible; }
   .information-card__about-pict {
     margin-top: 1rem;
@@ -267,7 +268,8 @@ p {
   .information-card {
     transform: scale(1, 1) translate(0, 0); }
     .information-card--section {
-      visibility: visible; }
+      visibility: visible;
+      transform: translate(0, 0); }
   .main-profile-card {
     max-width: 100%;
     height: 500px; }
