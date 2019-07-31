@@ -25,7 +25,6 @@ body {
     border-radius: 5px;
   }
 }
-
 h1 {
   font-size: 1.3rem;
   font-weight: 400;
@@ -54,7 +53,7 @@ p {
   max-width: 400px;
   &__bgPhoto {
     height: 50%;
-    background: url(../img/bck-photo.jpg) no-repeat right top / cover;
+    background: url(../img/space.jpg) no-repeat right top / cover;
     clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%);
   }
   &__content {
@@ -152,15 +151,18 @@ p {
     top: 1rem;
     left: -100%;
     max-width: 100%;
+    visibility: hidden;
     transition: all 0.3s ease;
     &.active-section {
       left: 5%;
+      visibility: visible;
     }
   }
   &__about-pict {
-    height: 50%;
+    margin-top: 1rem;
+    height: 15rem;
     width: 100%;
-    background: url(../img/bck-photo.jpg) no-repeat right top / cover;
+    background: url(../img/mainP.jpg) no-repeat center center / cover;
   }
 }
 
@@ -188,7 +190,7 @@ p {
     &:not(last-child) {
       border-bottom: 1px solid $color-grey-light;
       border-image: linear-gradient(
-          to right,
+          to bottom right,
           transparent,
           $color-grey-light,
           transparent

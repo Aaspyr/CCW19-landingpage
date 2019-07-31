@@ -1,5 +1,5 @@
 .area {
-  background: linear-gradient(to left, #78cc6d, #cbe6cc);
+  background: linear-gradient(to left, #2d4389, #881058);
   width: 100%;
   height: 100vh;
   position: fixed; }
@@ -92,7 +92,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #cbe6cc;
+  background-color: #881058;
   font-family: "Lato", sans-serif;
   font-size: 62.5%; }
 
@@ -137,7 +137,7 @@ p {
   max-width: 400px; }
   .main-profile-card__bgPhoto {
     height: 50%;
-    background: url(../img/bck-photo.jpg) no-repeat right top/cover;
+    background: url(../img/space.jpg) no-repeat right top/cover;
     clip-path: polygon(0% 0%, 100% 0, 100% 85%, 50% 100%, 0 85%); }
   .main-profile-card__content {
     padding-top: 1.1rem;
@@ -152,7 +152,7 @@ p {
   .main-profile-card__user-role {
     line-height: 1.3rem;
     letter-spacing: 0.2rem;
-    color: #78cc6d; }
+    color: #2d4389; }
   .main-profile-card__social-icon i {
     font-size: 1.8rem;
     margin: 0.3rem;
@@ -160,7 +160,7 @@ p {
     transition: color 0.3s ease;
     color: #333; }
     .main-profile-card__social-icon i:hover {
-      color: #78cc6d; }
+      color: #2d4389; }
   .main-profile-card__download-cv {
     padding: 1.1rem 0px;
     border-top: 1px solid #e0e0e0;
@@ -187,9 +187,9 @@ p {
         border-radius: 50px;
         border: 1px solid #333; }
       .main-profile-card__download-cv a:hover {
-        background: #78cc6d; }
+        background: #2d4389; }
         .main-profile-card__download-cv a:hover:after {
-          border: 1px solid #78cc6d; }
+          border: 1px solid #2d4389; }
 
 .information-card {
   z-index: -1;
@@ -207,20 +207,23 @@ p {
   .information-card::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #78cc6d; }
+    background-color: #2d4389; }
   .information-card--section {
     padding: 1.8rem;
     position: absolute;
     top: 1rem;
     left: -100%;
     max-width: 100%;
+    visibility: hidden;
     transition: all 0.3s ease; }
     .information-card--section.active-section {
-      left: 5%; }
+      left: 5%;
+      visibility: visible; }
   .information-card__about-pict {
-    height: 50%;
+    margin-top: 1rem;
+    height: 15rem;
     width: 100%;
-    background: url(../img/bck-photo.jpg) no-repeat right top/cover; }
+    background: url(../img/mainP.jpg) no-repeat center center/cover; }
 
 .navigation {
   background-color: transparent;
@@ -243,9 +246,9 @@ p {
       border-radius: 0px 0px 5px 5px; }
     .navigation-btn:not(last-child) {
       border-bottom: 1px solid #e0e0e0;
-      border-image: linear-gradient(to right, transparent, #e0e0e0, transparent) 1; }
+      border-image: linear-gradient(to bottom right, transparent, #e0e0e0, transparent) 1; }
     .navigation-btn:hover, .navigation-btn.active {
-      color: #78cc6d;
+      color: #2d4389;
       outline: none; }
     .navigation-btn i {
       display: block;
@@ -263,6 +266,8 @@ p {
     margin-bottom: 10%; }
   .information-card {
     transform: scale(1, 1) translate(0, 0); }
+    .information-card--section {
+      visibility: visible; }
   .main-profile-card {
     max-width: 100%;
     height: 500px; }

@@ -11,6 +11,9 @@
 
   .information-card {
     transform: scale(1, 1) translate(0, 0);
+    &--section {
+      visibility: visible;
+    }
   }
   .main-profile-card {
     max-width: 100%;
