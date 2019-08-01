@@ -159,7 +159,7 @@ p {
     width: 100%;
     transform: translate(-100%, 0);
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
     &.active-section {
       transform: translate(0, 0);
       visibility: visible;

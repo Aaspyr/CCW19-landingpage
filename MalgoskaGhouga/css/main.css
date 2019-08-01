@@ -221,7 +221,7 @@ p {
     width: 100%;
     transform: translate(-100%, 0);
     visibility: hidden;
-    transition: all 0.3s ease; }
+    transition: transform 0.3s ease; }
     .information-card--section.active-section {
       transform: translate(0, 0);
       visibility: visible; }
@@ -282,4 +282,10 @@ p {
   .navigation {
     display: none; }
   .information-card--section {
-    position: static; } }
+    position: static; }
+  p {
+    -webkit-columns: 1;
+    /* Chrome, Safari, Opera */
+    -moz-columns: 1;
+    /* Firefox */
+    columns: 1; } }

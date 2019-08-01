@@ -28,4 +28,10 @@
   .information-card--section {
     position: static;
   }
+
+  p {
+    -webkit-columns: 1; /* Chrome, Safari, Opera */
+    -moz-columns: 1; /* Firefox */
+    columns: 1;
+  }
 }
