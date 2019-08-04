@@ -83,12 +83,22 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
+
 .pic {
-    border: 0.2rem solid rgba(244, 244, 244, 1);
     width: 85%;
     height: 85%;
-    background-image: url(foto.jpg);
-    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /*background-image: url(foto.jpg);
+    background-size: cover; */
+}
+
+
+img {
+    max-width: 100%;
+    border: 0.2rem solid rgba(244, 244, 244, 1);
 }
 
 .about {
@@ -176,3 +186,6 @@ h3 {
     justify-content: center;
     align-items: flex-end;
 }
+
+
+    
