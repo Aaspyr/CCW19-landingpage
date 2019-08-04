@@ -49,8 +49,10 @@ body{
     background: rgba(168, 94, 64, 0.85);;
 }
 .photo{
-    background: white;
-    border-radius: 50%;  
+    border-radius: 50%;
+}
+.upper-container .photo{
+    background: white;  
     width: 140px;
 	height: 140px;
     padding: 5px;
@@ -103,6 +105,9 @@ body{
 
 
 /*profile style*/
+.all{
+    display: inline-block;
+}
 .container{
     display: grid;
     height: 90vh;
@@ -113,56 +118,51 @@ body{
     margin: 5% 10%;
 }
 .container>div{
-    background-color: rgba(255, 254, 254, 0.8);
+    background-color: rgba(255, 254, 254, 0.7);
     border-radius: 10px 10px;
 }
 .welcome {
     grid-column: span 3;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
 }
 .welcome .hello {
     flex: 2;
+    height: 60%;
+    width: 60%;
+    background-color: rgba(255, 254, 254, 0.6);
+    border-radius: 10px 10px;
+    margin-right: 5%;
+    padding: 2%;
+    
+}
+.welcome .photo{
+    width: 30%;
 }
 .welcome .myPhoto{
-    flex: 1;
+    width: 100%;
+    height: auto;
 }
-
-
-
-/**{
-    box-sizing: border-box;
+.house{
+    background: url("images/home.png") no-repeat center /contain;
 }
-.box {
-    width: 95%;
-    display: block;
-    justify-content: center;
-    align-items: center;
+.education{
+    background: url("images/education.png") no-repeat center /contain;
 }
-.welcome {
-    width: 70%;
-    height: 20%;
-    display: flex;
-    background-color: rgba(158, 104, 80, 0.6);
-    border-radius: 15px 15px;
-    padding: 2%;
+.food{
+    background: url("images/heart-with-bite.png") no-repeat center /contain;
 }
-.hello {
-    background-color: rgba(230, 194, 179, 0.705);
-    border-radius: 15px 15px;
-    margin: 5% 1%;
+.music{
+    background: url("images/headphones.png") no-repeat center /contain;
 }
-.welcome img {
-    width: 30%;
-    border-radius: 50%;
-    margin: 1%;
+.addiction{
+    background: url("images/computer.png") no-repeat center /contain;
 }
-.information {
-    width: 70%;
-    display: grid;
-    grid-auto-columns: 1fr 1fr;
-    justify-content: center;
+.work{
+    background: url("images/work.png") no-repeat center /contain;
 }
-.info{
-    background-color: rgb(rgb(158, 104, 80);
+i {
+    color: rgb(168, 94, 64);
 }
-*/
