@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8"/>
+	<title>My visit card</title>
+	<meta name="description" content="My hobby"/>
+	<meta name="keywords" content="Visitcard, myself"/>
+	<meta name="author" content="Marcelina Siuda"/>
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="hobby.css" style type="text/css"/>
+    <link rel="stylesheet" href="css/fontello.css" style type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Date</title>
+    <script>
+        function clock()
+        {
+            var date= new Date();
+            var day = date.getDate();
+            var dayName = date.getDay();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+            
+            var days = new Array("sunday", "monday", "tuesday", "wednesday", "thursday", "friady", "saturday");
+            var months = new Array("january", "february", "march", "april", "may", "jun", "julay", "august", "september", "october", "november", "grudnia");
+            
+            var showDate = days[dayName] + ', ' + day + ' ' + months[month] + ' ' + year;
+            document.getElementById("Date").innerHTML = showDate;
+           
+            setTimeout(clock, 1000);            
+        }        
+    </script>
+    
+</head>
+<body onload="clock()">
+
+<div class = "border">
+    <id="Date" class="wrapper">
+        <header class="header">
+                 <ul class="navigation">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><div id="Date"></div></li>
+                </ul>
+        </header>
+        <div class="photo"></div>
+        <div class="pokaz">
+            <div class="main">
+                <h1 class ="edu">My hobby - things that I love</h1>
+                <p class = "tekst1">
+                        At this place I would like to show what I'm interested in.<br/> What you find on this page are things that I really love.
+                </p> 
+                <a class="insta-icon" target="_blank" href="https://www.instagram.com/flerow/"><i class="icon-instagram"></i></a>
+                <a class="face-icon" target="_blank" href="https://www.facebook.com/marcelina.siuda.3"><i class="icon-facebook-squared"></i></a>
+                <a class="git-icon" target="_blank" href="https://github.com/MarcelinaSS"><i class="icon-github-circled"></i></a>
+            </div>
+            <div class="main1">
+                <div class ="picture1"> 
+                    <div class="overlay">
+                        <h1>Surfing</h1>
+                        <p>I have been surfing just for 2 years now, but it is absolutely my true love and passion.
+                           I’m all in, head over heels.When I'm catching wavesI don’t care about another thing in the world. I'm in love with surfing and the ocean.
+                        </p>
+                    </div>
+                </div>
+                <div class ="picture2"> 
+                    <div class="overlay">
+                        <h1>Animals</h1>
+                        <p>I love animals since I was a little girl.
+                            I was blessed to live in the countryside with many animals and birds in my backyard,
+                            which helped me grow up with a true love and care for the animals.
+                            I love all animals, but my favourite are dogs and guinea pigs. </p>
+                    </div>
+                </div>               
+                <div class ="picture3">
+                    <div class="overlay">
+                        <h1>Food</h1>
+                        <p>"There is no sincerer love than the love of food" - I'm totally agree with this statement.
+                            I love discovering new flavors and places where I can eat something that I have never tried.
+                        </p>
+                    </div> 
+                </div>              
+                <div class ="picture4"> 
+                    <div class="overlay">
+                        <h1>Travelling</h1>
+                        <p>Traveling reminds me that my life isn't the only one I could live and that in the grand scheme of things,
+                            I'm pretty unimportant to this world we live in. People get so caught up in their daily lives and forget
+                            that they can be somewhere or someone else tomorrow if they'd like.</p>
+                    </div>
+                </div>           
+                <div class ="picture5">
+                    <div class="overlay">
+                        <h1>Biology</h1>
+                        <p>Biology is inherently fascinating. From a very young age I have always loved reading and learning about science.
+                            Biology is unique because of the complexity of living things and how they interact with each other and 
+                            the environment. </p>
+                    </div> 
+                </div>
+                <div class ="picture6"> 
+                    <div class="overlay">
+                        <h1>Art</h1>
+                        <p>I love art and think it is entirely necessary to incorporate into everyday life.
+                             Art, for me, has taught me so much. I have begun to understand, through my art
+                            in its various mediums and forms, my life. </p>
+                    </div>
+                </div>
+            </div>
+        </div>           
+        <aside class="aside">
+            <div class="get"><p class="string">Get know more about me:<br/></p></div>
+            <ul class="mylist">
+                <li><a href="education.html" class="links">Education and training</a></li>
+                <li><a href="experience.html" class="links">(un)Professional experience</a></li>
+                <li><a href="skills.html" class="links">Skills</a></li>
+                <li><a href="hobby.html" class="links">Hobby</a></li>
+            </ul>
+        </aside>
+        <footer class="footer"></footer>
+    </div>  
+</div>
+
+</body>
+</html>
