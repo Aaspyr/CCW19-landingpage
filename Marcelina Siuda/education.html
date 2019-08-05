@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8"/>
+	<title>My visit card</title>
+	<meta name="description" content="Oto moja wizytówka. Dowiedz się o mnie więcej!"/>
+	<meta name="keywords" content="Visitcard, myself"/>
+	<meta name="author" content="Marcelina Siuda"/>
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="education.css" style type="text/css"/>
+    <link rel="stylesheet" href="css/fontello.css" style type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Date</title>
+    <script>
+        function clock()
+        {
+            var date= new Date();
+            var day = date.getDate();
+            var dayName = date.getDay();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+            
+            var days = new Array("sunday", "monday", "tuesday", "wednesday", "thursday", "friady", "saturday");
+            var months = new Array("january", "february", "march", "april", "may", "jun", "julay", "august", "september", "october", "november", "grudnia");
+            
+            var showDate = days[dayName] + ', ' + day + ' ' + months[month] + ' ' + year;
+            document.getElementById("Date").innerHTML = showDate;
+           
+            setTimeout(clock, 1000);            
+        }        
+    </script>
+    
+</head>
+<body onload="clock()">
+
+<div class = "border">
+    <id="Date" class="wrapper">
+        <header class="header">
+                 <ul class="navigation">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><div id="Date"></div></li>
+                </ul>
+        </header>
+        <div class="photo"></div>
+        <div class="pokaz">
+            <div class="main">
+                <h1 class ="edu">Education and training</h1>
+                <p class = "tekst1">Welcome to the section that tells about my education.
+                                    You can find out at this point what kind of school
+                                    I graduated and at which universities I have studied or I'm still studying.
+                </p> 
+                <a class="insta-icon" target="_blank" href="https://www.instagram.com/flerow/"><i class="icon-instagram"></i></a>
+                <a class="face-icon" target="_blank" href="https://www.facebook.com/marcelina.siuda.3"><i class="icon-facebook-squared"></i></a>
+                <a class="git-icon" target="_blank" href="https://github.com/MarcelinaSS"><i class="icon-github-circled"></i></a>
+            </div>
+            <div class="main1">
+                <div class="empty">
+                    <div class="date"></div>
+                    <div class="info"></div>
+                </div>
+                <div class="study">
+                    <div class="date"><p><i class="icon-graduation-cap"></i>  2011-2014</p></div>
+                    <div class="info"><p class="note">2th Comprehensive Secondary School in Legnica</p></div>
+                </div>
+                <div class="study">
+                    <div class="date"><p><i class="icon-graduation-cap"></i>  2014-2017</p></div>
+                    <div class="info"><p class="note">Bachelor of Microbiology</br> University of Wrocław</br>Department of Biological Sciences</p></div> 
+                </div> 
+                <div class="study">
+                    <div class="date"><p><i class="icon-graduation-cap"></i>  2017-2019</p></div>
+                    <div class="info"><p class="note">Master of Microbiology</br> University of Wrocław</br>The Faculty of Biological Sciences</p></div>
+                </div>
+                <div class="study">
+                    <div class="date"><p><i class="icon-graduation-cap"></i>  2018 -</p></div>
+                    <div class="info"><p class="note">Master of Bioinformatic</br> Wrocław University of Environmental and Life Sciences</br>The Faculty of Biology and Animal Science </p></div>
+                </div>
+            </div>
+        </div>           
+        <aside class="aside">
+            <div class="get"><p class="string">Get know more about me:<br/></p></div>
+            <ul class="mylist">
+                <li><a href="education.html" class="links">Education and training</a></li>
+                <li><a href="experience.html" class="links">(un)Professional experience</a></li>
+                <li><a href="skills.html" class="links">Skills</a></li>
+                <li><a href="hobby.html" class="links">Hobby</a></li>
+            </ul>
+        </aside>
+        <footer class="footer"></footer>
+    </div>  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8"/>
+	<title>My visit card</title>
+	<meta name="description" content="Oto moja wizytówka. Dowiedz się o mnie więcej!"/>
+	<meta name="keywords" content="Visitcard, myself"/>
+	<meta name="author" content="Marcelina Siuda"/>
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="experience.css" style type="text/css"/>
+    <link rel="stylesheet" href="css/fontello.css" style type="text/css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Date</title>
+    <script>
+        function clock()
+        {
+            var date= new Date();
+            var day = date.getDate();
+            var dayName = date.getDay();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+            
+            var days = new Array("sunday", "monday", "tuesday", "wednesday", "thursday", "friady", "saturday");
+            var months = new Array("january", "february", "march", "april", "may", "jun", "julay", "august", "september", "october", "november", "grudnia");
+            
+            var showDate = days[dayName] + ', ' + day + ' ' + months[month] + ' ' + year;
+            document.getElementById("Date").innerHTML = showDate;
+           
+            setTimeout(clock, 1000);            
+        }        
+    </script>
+    
+</head>
+<body onload="clock()">
+
+<div class = "border">
+    <id="Date" class="wrapper">
+        <header class="header">
+                 <ul class="navigation">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><div id="Date"></div></li>
+                </ul>
+        </header>
+        <div class="photo"></div>
+        <div class="pokaz">
+            <div class="main">
+                <h1 class ="edu">(un)Professional experience</h1>
+                <p class = "tekst1">
+                        I started my programming adventure recently,
+                        so I do not have any professional experience in this area.
+                        Nevertheless, I would like to present a few places where I worked on various jobs.
+                </p> 
+                <a class="insta-icon" target="_blank" href="https://www.instagram.com/flerow/"><i class="icon-instagram"></i></a>
+                <a class="face-icon" target="_blank" href="https://www.facebook.com/marcelina.siuda.3"><i class="icon-facebook-squared"></i></a>
+                <a class="git-icon" target="_blank" href="https://github.com/MarcelinaSS"><i class="icon-github-circled"></i></a>
+            </div>
+            <div class="main1">
+                <div class="work">
+                    <div class="date"></br>08.2017 - </div>
+                    <div class="place"></br>Vaffanapoli</div>
+                    <a class="ph" id="ph1" href="https://www.facebook.com/VaffaWroclaw/" target="_blank" title="Sprawdź to miejsce!"></a>
+                    <div class="description">
+                        <h1>position:     waitress</h1>
+                        <ul class="respo">
+                            <li><p>Providing excellent wait service to ensure satisfaction.</p></li>
+                            <li><p>Taking customer orders and delivering food and beverages.</p></li>
+                            <li><p>Making menu recommendations, answering questions and sharing additional information with restaurant patrons.</p></li>
+                            <li><p>Take accurate food and drinks orders, using a POS ordering software,order  slips or by memorization</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="date"></br>05.2018-09.2018</div>
+                    <div class="place"></br>Funsurf</div>
+                    <a class="ph" id="ph2" href="https://windsurfing.com.pl/" target="_blank" title="Sprawdź to miejsce!"></a>
+                    <div class="description">
+                        <h1>position:     receptionist</h1>
+                        <ul class="respo">
+                            <li><p>Running a windsurfing and kitesurfing school and rental.</p></li>
+                            <li><p>Caring for the proper technical condition of the rented equipment.</p></li>
+                            <li><p>Daily opening and closing of the base.</p></li>
+                            <li><p>Providing full information about the training and promotion that the windsurfing school has prepared for its clients.</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="date"></br>09.2015-05.2017</div>
+                    <div class="place"></br>Mc'Donald</div>
+                    <a class="ph" id="ph3"href="https://mcdonalds.pl/#" target="_blank" title="Sprawdź to miejsce!"></a>
+                    <div class="description">
+                        <h1>position:     young manager</h1>
+                        <ul class="respo">
+                            <li><p>Supervising different departments</p></li>
+                            <li><p>Ensuring friendly service</p></li>
+                            <li><p>Managing logistics, guidelines and community outreach</p></li>
+                            <li><p>Stocking, staffing, cleaning</p></li>
+                        </ul>
+                    </div> 
+                </div> 
+            </div>
+        </div>           
+        <aside class="aside">
+            <div class="get"><p class="string">Get know more about me:<br/></p></div>
+            <ul class="mylist">
+                <li><a href="education.html" class="links">Education and training</a></li>
+                <li><a href="experience.html" class="links">(un)Professional experience</a></li>
+                <li><a href="skills.html" class="links">Skills</a></li>
+                <li><a href="hobby.html" class="links">Hobby</a></li>
+            </ul>
+        </aside>
+        <footer class="footer"></footer>
+    </div>  
+</div>
+
+</body>
+</html>

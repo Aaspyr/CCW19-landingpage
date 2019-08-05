@@ -1,0 +1,390 @@
+/*---------------------------------------------------------body -general settings -----------------------------------------------------*/
+
+body
+{
+    background-color: white; 
+    text-align: center;
+    padding: 2em; 
+}
+
+/*---------------------------------------------------------- main - box ---------------------------------------------------------------*/
+
+.border
+{
+position: relative;
+height: 100%;
+width: 100%%;
+background-color: white;
+border: 5px solid mistyrose;
+margin: 40px;
+box-sizing: border-box;
+top:0px;
+}
+
+/*-------------------------------------------------------------profile photo-----------------------------------------------------------*/
+
+.photo{
+    position: absolute;
+    z-index: 3;
+    width: 174px;
+    height: 174px;
+    border: 5px solid white;
+	  border-radius: 150px;
+    background-image: url(images/face1.jpg);
+    background-position: center;
+    background-size: cover;
+    top: 78px;
+    left: 200px;
+}
+
+/*---------------------------------------------------------navigation header------------------------------------------------------------*/
+
+@import "compass/css3";
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: mistyrose;
+  
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.navigation div {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.navigation a:hover {
+  background: darken(mistyrose, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation  { 
+    text-align: center; 
+    padding: 10px; 
+  }
+
+  
+  .navigation li:last-of-type  {
+    border-bottom: none;
+  }
+}
+/*---------------------------------------------------------boarder structure -----------------------------------------------------------*/
+.wrapper {
+    display: flex;
+    position: relative; 
+    flex-wrap:nowrap;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    position: relative; 
+    background: white;
+  }
+  
+  .footer {
+    position: relative; 
+    background: mintcream;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom:10px;
+  }
+  .pokaz{
+    display:flex;
+    position: relative; 
+    flex-direction:column;
+    margin-right: 10px;
+    text-align: left;
+    background:white;
+  }
+  .main {
+    top:0px;
+    min-height: 200px;
+    text-align: center;
+    position: relative; 
+    background: cornsilk;
+    color: #CD5C5C;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .main1
+  {
+    margin: 10px; 
+    padding: 0px;
+  }
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .pokaz    { flex: 3 0px; }
+    .aside-1 { order: 1;} 
+    .pokaz    { order: 2;}
+    .footer  { order: 3;}
+  }
+  /*---------------------------------------------------------main structure -----------------------------------------------------------*/
+  .edu
+  {
+    text-align:center;
+    margin: 20px 100px 20px 100px;
+  }
+  .tekst1  
+  {
+    text-align:center;
+    margin: 0px 100px 50px 110px;
+  }
+
+  .insta-icon
+  {
+    display: block;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    left: 720px;
+    position:absolute;
+    font-size: 30px;
+    text-decoration: none;
+    color: #CD5C5C;
+  }
+
+  .face-icon
+  {
+    display: block;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    left: 670px;
+    position:absolute;
+    font-size: 30px;
+    text-decoration: none;
+    color: #CD5C5C;
+  }
+
+  .git-icon
+  {
+    display: block;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    left: 620px;
+    position:absolute;
+    font-size: 30px;
+    text-decoration: none;
+    color: #CD5C5C;
+  }
+
+/*------------------------------------------------------------main-1 structure -----------------------------------------------------------*/
+.element
+{
+  position: relative;
+  margin: auto;
+  text-align:center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: mistyrose;
+  border-radius: 100vh;
+  height: 100vh;
+  width: 100vh;
+}
+
+.inner-element
+{
+  position: relative;
+  margin: auto;
+  top: 25%;
+  background-color: white;
+  border-radius: 50vh;
+  height: 50vh;
+  width: 50vh;
+  text-align:center;
+}
+.line
+{
+  position:relative;
+  border-left: 10px solid #E0FFFF;
+  height: 100vh;
+  width: 0;
+  margin-left: 50%;
+  margin bottom: 50%;
+  bottom:50%;
+}
+
+.inner-element p
+{
+  position:relative;
+  margin:auto;
+  white-space: pre;
+  font-size: 20px;
+  bottom:153%;
+  font-family: 'Raleway', sans-serif;
+  color: #CD5C5C;
+}
+
+.hard
+{
+  position: absolute;
+  margin:auto;
+  z-index:5;
+  font-family: 'Raleway', sans-serif;
+  color: #CD5C5C;
+  font-size: 20px;
+}
+#hard0
+{
+  left:22%;
+  top: 15%;
+}
+
+#hard1
+{
+  left:7%;
+  top: 30%;
+}
+
+#hard2
+{
+  left:7%;
+  top: 45%;
+}
+
+#hard3
+{
+  left:7%;
+  top: 60%;
+}
+
+#hard4
+{
+  left:10%;
+  top: 75%;
+}
+
+#soft1
+{
+  right: 20%;
+  top: 10%;
+  font-size:18px;
+}
+#soft2
+{
+  right: 11%;
+  top: 22%;
+  font-size:18px;
+}
+#soft3
+{
+  right: 2%;
+  top: 35%;
+  font-size:18px;
+}
+#soft4
+{
+  right: 5%;
+  top: 55%;
+  font-size:18px;
+}
+#soft5
+{
+  right: 10%;
+  top: 74%;
+  font-size:18px;
+}
+#soft6
+{
+  right: 28%;
+  top: 85%;
+  font-size:18px;
+}
+
+.legend
+{
+  display: block;
+  position:absolute;
+  bottom: 0px;
+  right: 0px;
+  white-space: pre;
+  font-family: 'Raleway', sans-serif;
+  color: #CD5C5C;
+  font-size: 16px;
+
+}
+
+/*---------------------------------------------------------boarder structure -----------------------------------------------------------*/
+  .aside 
+  {
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;
+    position: relative;  
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    background: mistyrose;
+    font-family: 'Raleway', sans-serif;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+}
+.get
+{
+    display:flex;
+    position: relative;
+    top: 18%;
+    color: white;
+    font-size:30px;
+    font-family: 'Raleway', sans-serif;
+}
+.mylist
+{
+  display:block;
+  position: relative;
+  background-color: mistyrose;
+  top:18%;
+}
+.links{
+    display:flex;
+    color: white;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.links:hover 
+{
+    text-decoration: underline;
+}
