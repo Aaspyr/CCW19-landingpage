@@ -1,11 +1,80 @@
 * {
-    margin: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Titillium Web', sans-serif;
-    color: #fff;
-    background-color: #4a4a4a;
-    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  font-family: 'Play', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(74, 74, 74, 1);
+  background-image: url("weed.jpg");
+  background-size: cover;
+
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 27rem;
+  height: 5rem;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border: 0.1rem solid rgba(255, 255, 255, 1);
+  padding: 0.5rem;
+  transition: 0.5s;
+  animation-name: logo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  
+}
+
+@keyframes logo {
+      0% {transform: scale(1.1);}
+      50% {transform: scale(1);}
+      100% {transform: scale(1.1);}
+  }
+
+.logo:hover {
+  cursor: pointer;
+  animation-name: hover;
+}
+
+@keyframes hover {
+      100% {transform: scale(1);}  
+} 
+
+.letsgo {
+  font-size: 0.3em;
+  text-align: center;
+  padding-top: 0.3em;
+  font-weight: 400;
+  letter-spacing: normal;
+  opacity: 0;
+  transition: 1.5s;
+  position: absolute;
+  top: 6rem;
+}
+
+.logo:hover .letsgo {
+  opacity: 1;
+}
+
+.link {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.w:hover {
+ color: rgba(183, 183, 183, 1); 
 }
