@@ -105,10 +105,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #333; }
+  color: #333333; }
   .wrapper > * {
     flex: 2;
-    background-color: #fff;
+    background-color: white;
     border-radius: 5px; }
 
 h1 {
@@ -133,7 +133,7 @@ p {
   columns: 2; }
 
 .main-profile-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   max-width: 45%; }
   .main-profile-card__bgPhoto {
@@ -159,7 +159,7 @@ p {
     margin: 0.3rem;
     cursor: pointer;
     transition: color 0.3s ease;
-    color: #333; }
+    color: #333333; }
     .main-profile-card__social-icon i:hover {
       color: #2d4389; }
   .main-profile-card__download-cv {
@@ -169,12 +169,12 @@ p {
     .main-profile-card__download-cv a {
       font-size: 0.7rem;
       text-transform: uppercase;
-      color: #fff;
+      color: white;
       font-weight: 600;
       text-decoration: none;
       padding: 5px 20px;
       border-radius: 50px;
-      background: #333;
+      background: #333333;
       position: relative;
       transition: all 0.3s ease; }
       .main-profile-card__download-cv a:after {
@@ -186,7 +186,7 @@ p {
         left: -3px;
         right: -3px;
         border-radius: 50px;
-        border: 1px solid #333; }
+        border: 1px solid #333333; }
       .main-profile-card__download-cv a:hover {
         background: #2d4389; }
         .main-profile-card__download-cv a:hover:after {
@@ -240,7 +240,7 @@ p {
   max-width: 70px;
   padding-top: 1.5rem; }
   .navigation-btn {
-    background-color: #fff;
+    background-color: white;
     font-size: 0.7rem;
     text-align: center;
     border: none;
