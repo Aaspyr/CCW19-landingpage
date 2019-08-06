@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/gray.png); 
+}
+.box{
+    position: absolute;
+    animation: star 6s infinite ease-in-out;
+    top: 11rem;
+}
+.box1 {
+    left:-10%;
+    animation-delay: 1s;
+}
+.box2 {
+    left:-10%;
+    animation-delay: 1.4s;
+}
+.box3 {
+    left:-10%;
+    animation-delay: 1.8s;
+}
+.box4 {
+    left:-10%;
+    animation-delay: 2.2s;
+}
+.box5 {
+    left:-10%;
+    animation-delay: 2.6s;
+}
+.box6 {
+    left:-10%;
+    animation-delay: 3s;
+}
+@keyframes star{
+    0% {top: 80%; left: 80%;}
+    25% {left: 60%;}
+    50% {top: 10%; left: 10%;}
+    75% {left: 20%;}
+    100% {top: 80%; left: 80%;}
+    }
+.icon-star{
+    font-size: 5rem;
+    opacity: 0.9;
+    color: white;
+}
+.center{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 5px 5px 10px 5px #777;
+    background-image: linear-gradient(to bottom right, #ff8000, #e3e7e6);
+    border-radius: 20%;
+}
+.pudełko {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.napis{
+    font-family:'Abel', sans-serif;
+    font-size: 3.5rem;
+    transition: transform 0.8s ease-in-out;
+    text-align: center;
+}
+.napis:hover{
+    transform: scale(1.3) rotate(360deg);
+}
+a{
+ text-decoration: none;
+ color: rgba(30, 30, 30, 0.8);
+}
