@@ -7,10 +7,10 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "9bba5df43e4e9419975336161e1810c3",
-      "css": "github",
-      "code": 59392,
-      "src": "zocial"
+      "uid": "5408be43f7c42bccee419c6be53fdef5",
+      "css": "doc-text",
+      "code": 61686,
+      "src": "fontawesome"
     },
     {
       "uid": "6f7586c6f99798c3c1de6123d1f6cfa9",
@@ -25,10 +25,16 @@
       "src": "brandico"
     },
     {
-      "uid": "a58032f4aafd0eec54803075f5b320d4",
-      "css": "email",
-      "code": 59394,
+      "uid": "9bba5df43e4e9419975336161e1810c3",
+      "css": "github",
+      "code": 59392,
       "src": "zocial"
+    },
+    {
+      "uid": "91bac16b22827347e9ee20477f0b44d2",
+      "css": "mail",
+      "code": 59394,
+      "src": "linecons"
     }
   ]
 }

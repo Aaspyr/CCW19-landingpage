@@ -1,5 +1,6 @@
 
 .icon-github:before { content: '\e800'; } /* '' */
 .icon-facebook:before { content: '\e801'; } /* '' */
-.icon-email:before { content: '\e802'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
 .icon-instagram:before { content: '\f31e'; } /* '' */
