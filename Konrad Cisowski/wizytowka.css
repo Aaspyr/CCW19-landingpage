@@ -40,8 +40,7 @@ body {
     left: 0%;
 }
 
-.thumbnail .git
-{
+.thumbnail .git {
 	position: absolute;
 	display: block;
 	background-color: #111;
@@ -50,48 +49,41 @@ body {
 	bottom: 26%;
 }
 
-.thumbnail .git
-{
+.thumbnail .git {
 	width: 150px;
 	height: 278px;
 }
 
-.thumbnail .gitone
-{
+.thumbnail .gitone {
 	width: 30%;
 	height: 25%;
 	left: 15%;
 }
 
-.thumbnail:hover .gitone
-{
+.thumbnail:hover .gitone {
 	opacity: 0.85;
 	background-color: #ff3333;
 }
 
-.thumbnail .gittwo
-{
+.thumbnail .gittwo {
 	width: 30%;
 	height: 25%;
 	left: 55%;
 	text-align: center;
 }
 
-.thumbnail:hover .gittwo
-{
+.thumbnail:hover .gittwo {
 	opacity: 0.85;
 	color: green;
 }
 
-.thumbnail .gitthree
-{
+.thumbnail .gitthree {
 	width: 50%;
 	height: 15%;
 	left: 25%;
 }
 
-.thumbnail:hover .gitthree
-{
+.thumbnail:hover .gitthree {
 	opacity: 0.85;
 	color: green;
 }
@@ -151,7 +143,6 @@ div.thumbnail img {
 
 div.thumbnail img:hover {
  	box-shadow: 10px 10px 10px green;
-
 }
 
 h2 {
