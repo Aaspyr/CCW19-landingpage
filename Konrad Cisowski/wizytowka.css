@@ -1,0 +1,257 @@
+body {
+	background-color: grey;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 18em;
+    font-size: 0.35em;
+    left: 5%;
+    padding: 4px 4px 4px 8px;
+    color: #ddd;
+    background-color: darkgreen;
+    white-space: nowrap; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;  
+    -moz-box-shadow: 0px 0px 4px #222;  
+    -webkit-box-shadow: 0px 0px 4px #222;  
+    box-shadow: 0px 0px 4px #222;  
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
+}
+
+.stack[data-title]:after {
+	font-size: 1.5em;
+	bottom: 2.2em;
+    left: 0%;
+}
+
+.thumbnail .git
+{
+	position: absolute;
+	display: block;
+	background-color: #111;
+	opacity: 0;
+	transition: opacity 1.5s ease-in-out;
+	bottom: 26%;
+}
+
+.thumbnail .git
+{
+	width: 150px;
+	height: 278px;
+}
+
+.thumbnail .gitone
+{
+	width: 30%;
+	height: 25%;
+	left: 15%;
+}
+
+.thumbnail:hover .gitone
+{
+	opacity: 0.85;
+	background-color: #ff3333;
+}
+
+.thumbnail .gittwo
+{
+	width: 30%;
+	height: 25%;
+	left: 55%;
+	text-align: center;
+}
+
+.thumbnail:hover .gittwo
+{
+	opacity: 0.85;
+	color: green;
+}
+
+.thumbnail .gitthree
+{
+	width: 50%;
+	height: 15%;
+	left: 25%;
+}
+
+.thumbnail:hover .gitthree
+{
+	opacity: 0.85;
+	color: green;
+}
+
+.jumbotron {
+	padding-top: 15%;
+	height: 100vh;
+}
+
+#atnav {
+	font-size: 1.5em;
+}
+
+i.fas.fa-at {
+	font-size: 5em;
+}
+
+#card-group {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 12%;
+}
+
+.card-body {
+	padding: 15% 10%;
+	line-height: 2.5em;
+	max-height: 20%; 
+}
+
+main {
+	background-color: black;
+	color: white;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.project-tile a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	border-radius: 8px;
+}
+
+.project-tile a:hover {
+
+	text-shadow: 5px 5px 10px green;
+	border-radius: 20px;
+}
+
+div.thumbnail img {
+	height: 15rem;
+	width: 90%;
+	margin: 10% 5%;
+ 	box-shadow: 2px 2px 10px yellow;
+ 	border-radius: 25px;
+}
+
+div.thumbnail img:hover {
+ 	box-shadow: 10px 10px 10px green;
+
+}
+
+h2 {
+    font-size: 3em;
+    padding: 10%;
+	position: relative;
+	animation: show 5s infinite;
+	animation-fill-mode: forwards;
+}
+
+h3 {
+	margin: 5% 10%;
+}
+
+section#Contact a{
+	display: inline-block;
+}
+
+#contacttext {
+	animation: text 10s infinite;
+}
+
+.median {
+	font-size: 7em;
+	text-decoration: none;
+	margin: 2% 6% 10% 6%;
+}
+
+.median:hover {
+	text-decoration: none;
+	opacity: 0.8;
+	text-shadow: 5px 5px 10px green;
+	transform: rotate(360deg) scale(1.2);
+	transition: 1.5s;
+}
+
+#gh {
+	color: black;
+}
+
+#gh1 {
+	color: white;
+}
+
+#profile-link {
+	color: green;
+}
+
+#li {
+	color: #0077B5;
+}
+
+#gm {
+	color: #d34836;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+@keyframes text {
+	0% {
+		color: darkgreen;
+	}
+
+	15% {
+		color: gray;
+	}
+
+	30% {
+		color: #0077B5;
+	}
+	45% {
+		color: gray;
+	}
+
+	60% {
+		color: #d34836;
+	}
+
+}
+
+@keyframes show{
+	0% {top: 0px}
+	50% {top: 3em}
+	100% {top: 0px;}
+}
+
+@media screen and (max-width: 768px){
+	main {
+		background-color: grey;
+		color: black;
+	}
+
+	#card-group {
+	display: inline-block;
+	}
+}
+
+#Whoami img {
+	max-height: 53%;
+}
