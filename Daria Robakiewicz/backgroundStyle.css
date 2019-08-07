@@ -1,7 +1,7 @@
 /*plik zawiera ustawienia stylów dla tła stron i body*/
 html{
   --borderColor: rgb(141, 52, 30);
-  --contentColor: rgba(255, 254, 254, 0.7);
+  --contentColor: rgba(255, 254, 254, 0.788);
   --contentColorLight: rgba(255, 254, 254, 0.5);
   --white: rgb(255, 254, 254);
   --brownLight: rgba(168, 94, 64, 0.85);
