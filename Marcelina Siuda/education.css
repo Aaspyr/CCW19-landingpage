@@ -2,9 +2,10 @@
 
 body
 {
-    background-color: white; 
+    background-color: #ffffff; 
     text-align: center;
     padding: 2em; 
+    font-size:17px; 
 }
 
 /*---------------------------------------------------------- main - box ---------------------------------------------------------------*/
@@ -13,33 +14,29 @@ body
 {
 position: relative;
 height: 100%;
-width: 100%%;
-background-color: white;
-border: 5px solid mistyrose;
-margin: 40px;
+width: 100%;
+background-color: #ffffff;
+border: 0.7em solid #ffe4e1;
+margin: auto;
 box-sizing: border-box;
-top:0px;
 }
 
 /*-------------------------------------------------------------profile photo-----------------------------------------------------------*/
 
 .photo{
-    position: absolute;
-    z-index: 3;
-    width: 174px;
-    height: 174px;
-    border: 5px solid white;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-    background-image: url(images/face1.jpg);
-    background-position: center;
-    background-size: cover;
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8); */
-    top: 78px;
-    left: 200px;
+  position: absolute;
+  z-index: 3;
+  width: 11.5em;
+  height: 11.5em;
+  border: 0.4em solid #ffffff;
+  border-radius: 13em;
+  -webkit-border-radius: 13em;
+  -moz-border-radius: 13em;
+  background-image: url(images/face1.jpg);
+  background-position: center;
+  background-size: cover;
+  top: 0.9%;
+  left: -12%;
 }
 
 /*---------------------------------------------------------navigation header------------------------------------------------------------*/
@@ -50,12 +47,7 @@ top:0px;
   list-style: none;
   margin: 0; 
   
-  background: mistyrose;
-  
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  background: #ffe4e1;
   display: flex;
   
   -webkit-flex-flow: row wrap;
@@ -66,19 +58,19 @@ top:0px;
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: #ffffff;
   font-family: 'Raleway', sans-serif;
 }
 .navigation div {
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: white;
+    color: #ffffff;
     font-family: 'Raleway', sans-serif;
   }
 
 .navigation a:hover {
-  background: darken(mistyrose, 2%);
+  background: darken(#ffe4e1, 2%);
 }
 
 @media all and (max-width: 800px) {
@@ -96,7 +88,7 @@ top:0px;
   
   .navigation  { 
     text-align: center; 
-    padding: 10px; 
+    padding: 2%; 
   }
 
   
@@ -115,36 +107,38 @@ top:0px;
   }
   
   .wrapper > * {
-    padding: 10px;
+    padding: 0.5em;
     flex: 1 100%;
   }
   
   .header {
     position: relative; 
-    background: white;
+    background: #ffffff;
   }
   
   .footer {
     position: relative; 
-    background: mintcream;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom:10px;
+    background: #f5fffa;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom:0.5em;
   }
+
   .pokaz{
     display:flex;
     position: relative; 
     flex-direction:column;
-    margin-right: 10px;
+    margin-right: 0.5em;
     text-align: left;
-    background:white;
+    background:#ffffff;
   }
   .main {
-    top:0px;
-    min-height: 200px;
+    display:flex;
+    min-height: 28%;
+    min-width:100%;
     text-align: center;
     position: relative; 
-    background: cornsilk;
+    background-color: #fff8dc;
     color: #CD5C5C;
     font-family: 'Raleway', sans-serif;
     flex-direction: column;
@@ -152,23 +146,37 @@ top:0px;
     align-content: center;
   }
   .main1{
-    /* display:flex;
-    top:0px;
-    position: relative;  */
+    display:flex;
+    position: relative; 
     text-align: left;
-    /* background:white; */
     flex-direction:column;
     justify-content: center;
-    margin: 10px;
+    margin: 0.5em;
     
   }
+
+  .aside 
+  {
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;
+    position: relative;  
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #ffffff;;
+    background-color: #ffe4e1;
+    font-family: 'Raleway', sans-serif;
+    justify-content: flex-start;
+  }
+
   @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
   }
   
   @media all and (min-width: 800px) {
     .pokaz    { flex: 3 0px; }
-    .aside-1 { order: 1;} 
+    .aside { order: 1;} 
     .pokaz    { order: 2;}
     .footer  { order: 3;}
   }
@@ -176,23 +184,22 @@ top:0px;
 .edu
 {
   text-align:center;
-  margin: 20px 100px 20px 100px;
+  margin: 6% 14% 0% 14%;
 }
 .tekst1  
 {
   text-align:center;
-  margin: 0px 100px 50px 110px;
+  margin: 1% 14% 6% 14%;
 }
 
   .insta-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    left: 720px;
+    bottom: 3%; 
+    left: 93%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -200,12 +207,11 @@ top:0px;
   .face-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    left: 670px;
+    bottom: 3%;
+    left: 86%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -213,12 +219,11 @@ top:0px;
   .git-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    left: 620px;
+    bottom: 3%;
+    left: 79%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -229,7 +234,6 @@ top:0px;
     display: flex;
     flex-direction: row;
     position:relative;
-    background-color:white;
     min-height: 10vh;
     
      
@@ -239,8 +243,7 @@ top:0px;
     display: flex;
     flex-direction: row;
     position:relative;
-    background-color:white;
-    border-top: 3px solid mistyrose;
+    border-top: 3px solid #ffe4e1;
     min-height: 20vh;
 }
 
@@ -248,7 +251,7 @@ top:0px;
 {
     display: flex;
     position:relative;
-    border-right: 3px solid mistyrose;
+    border-right: 3px solid #ffe4e1;
     flex-grow: 5;
     max-width: 30vh;
     font-family: 'Raleway', sans-serif;
@@ -261,67 +264,54 @@ top:0px;
 {
     display: flex;
     position:relative;
-    flex-grow: 10;
-    max-width: 50vh;
+    flex-grow: 8;
+    max-width:100%;
     font-family: 'Raleway', sans-serif; 
     color: #CD5C5C;
     text-align: left;
     flex-direction: column;
     justify-content: center;
-    
-
+    white-space: wrap;
+	  overflow: hidden;
+    text-overflow: ellipsis;
 }
 .note
 {
-    display: block;
+    display: flex;
     position:relative;
-    margin-left: 10vh;
+    margin-left: 5vh;
     white-space: nowrap;
 }
-/*---------------------------------------------------------boarder structure -----------------------------------------------------------*/
-  .aside 
-  {
-    display:flex;
-    flex-direction:column;
-    text-decoration: none;
-    position: relative;  
-    margin-top: 10px;
-    margin-left: 10px;
-    color: white;
-    background: mistyrose;
-    font-family: 'Raleway', sans-serif;
-    justify-content:flex-start;
-    padding-bottom: 5px;
-    column-gap: 10px;
-}
+
+
+/*---------------------------------------------------------aside structure -----------------------------------------------------------*/
+
 .get
 {
-    display:block;
-    position: relative;
-    top: 20%;
-    color: white;
-    font-size:30px;
-    font-family: 'Raleway', sans-serif;
+  display:block;
+  position: relative;
+  color: #ffffff;
+  font-size:1.8em;;
+  top:23%;
+  font-family: 'Raleway', sans-serif;
 }
-
 .mylist
 {
-    display:block;
-    position: relative;
-    background-color: mistyrose;
-    top:20%;
+  display:block;
+  position: relative;
+  top:23%;
 }
-
 .links{
     display:flex;
-    color: white;
+    color: #ffffff;
     position: relative;
     background-color: transparent;
     text-decoration: none;
-    font-size:20px;
-    margin-bottom:10px;
+    font-size:1.2em;
+    margin-bottom:0.5em;
 }
-.links:hover 
+
+.links:hover
 {
     text-decoration: underline;
-}
+} 

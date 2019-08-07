@@ -2,9 +2,10 @@
 
 body
 {
-    background-color: white; 
+    background-color: #ffffff ; 
     text-align: center;
-    padding: 2em; 
+    padding: 2em;
+    font-size:17px;  
 }
 
 /*---------------------------------------------------------- main - box ---------------------------------------------------------------*/
@@ -13,28 +14,29 @@ body
 {
 position: relative;
 height: 100%;
-width: 100%%;
-background-color: white;
-border: 5px solid mistyrose;
-margin: 40px;
+width: 100%;
+background-color: #ffffff;
+border: 0.7em solid #ffe4e1;
+margin: auto;
 box-sizing: border-box;
-top:0px;
 }
 
 /*-------------------------------------------------------------profile photo-----------------------------------------------------------*/
 
 .photo{
-    position: absolute;
-    z-index: 3;
-    width: 174px;
-    height: 174px;
-    border: 5px solid white;
-	  border-radius: 150px;
-    background-image: url(images/face1.jpg);
-    background-position: center;
-    background-size: cover;
-    top: 78px;
-    left: 200px;
+  position: absolute;
+  z-index: 3;
+  width: 11.5em;
+  height: 11.5em;
+  border: 0.4em solid #ffffff;
+  border-radius: 13em;
+  -webkit-border-radius: 13em;
+  -moz-border-radius: 13em;
+  background-image: url(images/face1.jpg);
+  background-position: center;
+  background-size: cover;
+  top: 0.4%;
+  left: -12%;
 }
 
 /*---------------------------------------------------------navigation header------------------------------------------------------------*/
@@ -45,8 +47,7 @@ top:0px;
   list-style: none;
   margin: 0; 
   
-  background: mistyrose;
-  
+  background: #ffe4e1;
   display: flex;
   
   -webkit-flex-flow: row wrap;
@@ -57,19 +58,19 @@ top:0px;
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: #ffffff;
   font-family: 'Raleway', sans-serif;
 }
 .navigation div {
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: white;
+    color: #ffffff;
     font-family: 'Raleway', sans-serif;
   }
 
 .navigation a:hover {
-  background: darken(mistyrose, 2%);
+  background: darken(#ffe4e1, 2%);
 }
 
 @media all and (max-width: 800px) {
@@ -87,7 +88,7 @@ top:0px;
   
   .navigation  { 
     text-align: center; 
-    padding: 10px; 
+    padding: 2%; 
   }
 
   
@@ -106,36 +107,35 @@ top:0px;
   }
   
   .wrapper > * {
-    padding: 10px;
+    padding: 0.5em;
     flex: 1 100%;
   }
   
   .header {
     position: relative; 
-    background: white;
+    background: #ffffff;
   }
   
   .footer {
     position: relative; 
-    background: mintcream;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom:10px;
+    background: #f5fffa;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom:0.5em;
   }
   .pokaz{
     display:flex;
     position: relative; 
     flex-direction:column;
-    margin-right: 10px;
+    margin-right: 0.5em;
     text-align: left;
-    background:white;
+    background:#ffffff;
   }
   .main {
-    top:0px;
-    min-height: 200px;
+    min-height: 23.5%;
     text-align: center;
     position: relative; 
-    background: cornsilk;
+    background: #fff8dc;
     color: #CD5C5C;
     font-family: 'Raleway', sans-serif;
     flex-direction: column;
@@ -144,16 +144,32 @@ top:0px;
   }
   .main1
   {
-    margin: 10px; 
-    padding: 0px;
+    margin: 0.5em;
+    padding: 0em;
   }
+
+  .aside 
+  {
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;
+    position: relative;  
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #ffffff;;
+    background-color: #ffe4e1;
+    font-family: 'Raleway', sans-serif;
+    justify-content: flex-start;
+  }
+
   @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
   }
   
   @media all and (min-width: 800px) {
     .pokaz    { flex: 3 0px; }
-    .aside-1 { order: 1;} 
+    .aside { order: 1;} 
     .pokaz    { order: 2;}
     .footer  { order: 3;}
   }
@@ -161,23 +177,22 @@ top:0px;
   .edu
   {
     text-align:center;
-    margin: 20px 100px 20px 100px;
+    margin: 6% 14% 0% 14%;
   }
   .tekst1  
   {
     text-align:center;
-    margin: 0px 100px 50px 110px;
+    margin: 1% 14% 6% 14%;
   }
 
   .insta-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    left: 720px;
+    bottom: 3%; 
+    left: 93%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -185,12 +200,11 @@ top:0px;
   .face-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    left: 670px;
+    bottom: 3%;
+    left: 86%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -198,12 +212,11 @@ top:0px;
   .git-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    left: 620px;
+    bottom: 3%;
+    left: 79%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -214,9 +227,9 @@ top:0px;
   position: relative;
   margin: auto;
   text-align:center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: mistyrose;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: #ffe4e1;
   border-radius: 100vh;
   height: 100vh;
   width: 100vh;
@@ -227,7 +240,7 @@ top:0px;
   position: relative;
   margin: auto;
   top: 25%;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 50vh;
   height: 50vh;
   width: 50vh;
@@ -236,7 +249,7 @@ top:0px;
 .line
 {
   position:relative;
-  border-left: 10px solid #E0FFFF;
+  border-left: 0.5em solid #E0FFFF;
   height: 100vh;
   width: 0;
   margin-left: 50%;
@@ -249,7 +262,7 @@ top:0px;
   position:relative;
   margin:auto;
   white-space: pre;
-  font-size: 20px;
+  font-size: 1.1em;
   bottom:153%;
   font-family: 'Raleway', sans-serif;
   color: #CD5C5C;
@@ -262,7 +275,7 @@ top:0px;
   z-index:5;
   font-family: 'Raleway', sans-serif;
   color: #CD5C5C;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 #hard0
 {
@@ -334,57 +347,44 @@ top:0px;
 .legend
 {
   display: block;
-  position:absolute;
-  bottom: 0px;
-  right: 0px;
+  position:relative;
+  margin-bottom: 2%;
+  text-align: right;
   white-space: pre;
   font-family: 'Raleway', sans-serif;
   color: #CD5C5C;
-  font-size: 16px;
+  font-size: 0.9em;
 
 }
 
-/*---------------------------------------------------------boarder structure -----------------------------------------------------------*/
-  .aside 
-  {
-    display:flex;
-    flex-direction:column;
-    text-decoration: none;
-    position: relative;  
-    margin-top: 10px;
-    margin-left: 10px;
-    color: white;
-    background: mistyrose;
-    font-family: 'Raleway', sans-serif;
-    justify-content: flex-start;
-    padding-bottom: 5px;
-}
+/*---------------------------------------------------------aside structure -----------------------------------------------------------*/
+
 .get
 {
-    display:flex;
-    position: relative;
-    top: 18%;
-    color: white;
-    font-size:30px;
-    font-family: 'Raleway', sans-serif;
+  display:block;
+  position: relative;
+  color: #ffffff;
+  font-size:1.8em;;
+  top:20%;
+  font-family: 'Raleway', sans-serif;
 }
 .mylist
 {
   display:block;
   position: relative;
-  background-color: mistyrose;
-  top:18%;
+  top:20%;
 }
 .links{
     display:flex;
-    color: white;
+    color: #ffffff;
     position: relative;
     background-color: transparent;
     text-decoration: none;
-    font-size:20px;
-    margin-bottom:10px;
+    font-size:1.2em;
+    margin-bottom:0.5em;
 }
-.links:hover 
+
+.links:hover
 {
     text-decoration: underline;
 }
