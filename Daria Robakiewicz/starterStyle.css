@@ -1,0 +1,73 @@
+/*plik zawiera ustawienia stylów dla strony startowej (starterPage.html)*/
+.welcomeCard{
+    width: 300px;
+	height: 400px;
+	background: var(--white);
+	border-radius: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0px 1px 10px 1px var(--black);
+}
+/*stylizacja nakładki*/
+.overlay{
+    height: 150px;
+    background: var(--brownLight);
+}
+/*stylizacja zdjęcia*/
+.photo{
+    border-radius: 50%;
+}
+.overlay .photo{
+    background: var(--white);  
+    width: 140px;
+	height: 140px;
+    padding: 5px;
+    top: 100%;
+    left: 50%;
+	transform: translate(50%,35%);
+}
+.myPhoto{
+    border-radius: 50%;
+}
+.photo img{
+    width: 140px;
+    height: 140px;
+}
+/*stylizacja kontenera z informacjami*/
+.contenerWithInformation{
+	padding: 20px;
+	padding-top: 40px;
+	text-align: center;
+}
+.contenerWithInformation h1{
+    color: var(--borderColor);
+    opacity: 0.9;
+	font-weight: bold;
+}
+.contenerWithInformation p{
+	font-size: 16px;
+	color: var(--lightBlack);
+	margin-bottom: 30px;
+}
+/*ustawienia przycisku*/
+.contenerWithInformation .buttonGoToProfile{
+    padding: 12px 20px;
+	background: var(--brownLight);
+	color: var(--white);
+	border-radius: 30px;
+	font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px;
+    transition: all .3s ease-in;
+}
+.contenerWithInformation .buttonGoToProfile:hover{
+	background: transparent;
+	color: var(--brownLight);
+	border: 2px solid var(--brownLight);
+}
+
+
+
