@@ -2,9 +2,10 @@
 
 body
 {
-    background-color: white; 
+    background-color: #ffffff; 
     text-align: center;
-    padding: 2em; 
+    padding: 2em;
+    font-size:17px; 
 }
 
 /*---------------------------------------------------------- main - box ---------------------------------------------------------------*/
@@ -13,12 +14,11 @@ body
 {
 position: relative;
 height: 100%;
-width: 100%%;
-background-color: white;
-border: 5px solid mistyrose;
-margin: 40px;
+width: 100%;
+background-color: #ffffff;
+border: 0.7em solid #ffe4e1;
+margin: auto;
 box-sizing: border-box;
-top:0px;
 }
 
 /*-------------------------------------------------------------profile photo-----------------------------------------------------------*/
@@ -26,17 +26,17 @@ top:0px;
 .photo{
     position: absolute;
     z-index: 3;
-    width: 174px;
-    height: 174px;
-    border: 5px solid white;
-	  border-radius: 150px;
-	  -webkit-border-radius: 150px;
-	  -moz-border-radius: 150px;
+    width: 11.5em;
+    height: 11.5em;
+    border: 0.4em solid #ffffff;
+	  border-radius: 13em;
+	  -webkit-border-radius: 13em;
+	  -moz-border-radius: 13em;
     background-image: url(images/face1.jpg);
     background-position: center;
     background-size: cover;
-    top: 10.5%;
-    left: 17%;
+    top: 0%;
+    left: -14%;
 }
 
 /*---------------------------------------------------------navigation header------------------------------------------------------------*/
@@ -47,7 +47,7 @@ top:0px;
   list-style: none;
   margin: 0; 
   
-  background: mistyrose;
+  background: #ffe4e1;
   display: flex;
   
   -webkit-flex-flow: row wrap;
@@ -58,19 +58,19 @@ top:0px;
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: #ffffff;;
   font-family: 'Raleway', sans-serif;
 }
 .navigation div {
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: white;
+    color: #ffffff;;
     font-family: 'Raleway', sans-serif;
   }
 
 .navigation a:hover {
-  background: darken(mistyrose, 2%);
+  background: darken(#ffe4e1, 2%);
 }
 
 @media all and (max-width: 800px) {
@@ -88,7 +88,7 @@ top:0px;
   
   .navigation  { 
     text-align: center; 
-    padding: 10px; 
+    padding: 2%; 
   }
 
   
@@ -107,53 +107,67 @@ top:0px;
   }
   
   .wrapper > * {
-    padding: 10px;
+    padding: 0.5em;
     flex: 1 100%;
   }
   
   .header {
     position: relative; 
-    background: white;
+    background: #ffffff;
   }
   
   .footer {
     position: relative; 
-    background: mintcream;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom:10px;
+    background: #f5fffa;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom:0.5em;
   }
   .pokaz{
-    display:flex;
+    display: flex;
     position: relative; 
     flex-direction:column;
-    margin-right: 10px;
-    text-align: left;
-    background:white;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    text-align: center;
   }
   .main {
-    top:0px;
-    min-height: 200px;
+    min-height: 27%;
     min-width:100%;
     text-align: center;
     position: relative; 
-    background: cornsilk;
+    background-color: #fff8dc;
     color: #CD5C5C;
     font-family: 'Raleway', sans-serif;
   }
   .main1{
-    top:0px;
     position: relative; 
     text-align: left;
-    
+    min-height:80vh;
   }
+
+.aside 
+  {
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;
+    position: relative;  
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #ffffff;;
+    background-color: #ffe4e1;
+    font-family: 'Raleway', sans-serif;
+    justify-content: flex-start;
+  }
+
   @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
   }
   
   @media all and (min-width: 800px) {
     .pokaz    { flex: 3 0px; }
-    .aside-1 { order: 1;} 
+    .aside { order: 1;} 
     .pokaz    { order: 2;}
     .footer  { order: 3;}
   }
@@ -161,18 +175,17 @@ top:0px;
   .tekst1
   {
     text-align:center;
-    margin: 50px 100px 50px 100px;
+    margin: 6% 14% 6% 14%;
   }
 
   .insta-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 5%;
+    bottom: 3%; 
     left: 93%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -180,12 +193,11 @@ top:0px;
   .face-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 5%;
+    bottom: 3%;
     left: 86%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -193,12 +205,11 @@ top:0px;
   .git-icon
   {
     display: block;
-    width: 30px;
-    height: 30px;
-    bottom: 5%;
+    bottom: 3%;
     left: 79%;
     position:absolute;
-    font-size: 30px;
+    margin-right:2%;
+    font-size: 2em;
     text-decoration: none;
     color: #CD5C5C;
   }
@@ -208,45 +219,36 @@ top:0px;
 .monitor
 {
   display:block;
+  position:relative;
   width: 100%;
-  min-height:400px;
+  height:100%;
   background-image: url(images/mon.jpg);
   background-position: center;
   background-size: cover;
-  margin: 10px;
+  margin: 0.5em;
   text-align:center;
 }
 .monitor p
 {
+  display:block;
+  position:relative;
   font-family: 'Fira Code', monospace;
-  color: white;
+  color: #ffffff;;
   white-space: pre;
-  font-size:18px;
-  padding-top: 20%;
+  margin:auto;
+  width: 60%;
+  font-size:1.1em;
+  top:40%;
 }
 
-/*---------------------------------------------------------boarder structure -----------------------------------------------------------*/
-.aside 
-{
-  display:flex;
-  flex-direction:column;
-  text-decoration: none;
-  position: relative;  
-  margin-top: 10px;
-  margin-left: 10px;
-  color: white;
-  background: mistyrose;
-  font-family: 'Raleway', sans-serif;
-  justify-content: flex-start;
-  padding-bottom: 5px;
+/*---------------------------------------------------------aside structure -----------------------------------------------------------*/
 
-}
 .get
 {
   display:block;
   position: relative;
-  color: white;
-  font-size:30px;
+  color: #ffffff;
+  font-size:1.8em;;
   top:25%;
   font-family: 'Raleway', sans-serif;
 }
@@ -254,17 +256,16 @@ top:0px;
 {
   display:block;
   position: relative;
-  background-color: mistyrose;
   top:25%;
 }
 .links{
     display:flex;
-    color: white;
+    color: #ffffff;
     position: relative;
     background-color: transparent;
     text-decoration: none;
-    font-size:20px;
-    margin-bottom:10px;
+    font-size:1.2em;
+    margin-bottom:0.5em;
 }
 
 .links:hover
