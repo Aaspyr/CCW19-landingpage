@@ -34,10 +34,16 @@ h1 {
 }
 
 h2 {
-  font-weight: 400;
-  display: block;
-  text-transform: uppercase;
+  @extend h1;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+h3 {
+  @extend h1;
+  color: $color-secondary;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
 }
 
 p {
@@ -46,6 +52,7 @@ p {
   -webkit-columns: 2; /* Chrome, Safari, Opera */
   -moz-columns: 2; /* Firefox */
   columns: 2;
+  text-align: justify;
 }
 
 .main-profile-card {
@@ -153,7 +160,7 @@ p {
     background-color: $color-secondary;
   }
   &--section {
-    padding: 1.8rem;
+    padding: 1.8rem 3rem 1.8rem 1.8rem;
     position: absolute;
     top: 1rem;
     left: 3%;
@@ -174,6 +181,21 @@ p {
   }
   &__Education-pict {
     background: url(../img/Education.jpg) no-repeat center center / cover;
+  }
+  &__content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    p {
+      -webkit-columns: 1; /* Chrome, Safari, Opera */
+      -moz-columns: 1; /* Firefox */
+      columns: 1;
+    }
+    span {
+      color: $color-grey-light-text;
+      display: block;
+      margin-bottom: 1rem;
+    }
   }
 }
 

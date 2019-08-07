@@ -23,17 +23,20 @@ body {
     background-color: white;
     border-radius: 5px; }
 
-h1 {
+h1, h2, h3 {
   font-size: 1.3rem;
   font-weight: 400;
   display: block;
   text-transform: uppercase; }
 
 h2 {
-  font-weight: 400;
-  display: block;
-  text-transform: uppercase;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 1.1rem; }
+
+h3 {
+  color: #2d4389;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem; }
 
 p {
   font-size: 0.8rem;
@@ -42,7 +45,8 @@ p {
   /* Chrome, Safari, Opera */
   -moz-columns: 2;
   /* Firefox */
-  columns: 2; }
+  columns: 2;
+  text-align: justify; }
 
 .main-profile-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -126,7 +130,7 @@ p {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #2d4389; }
   .information-card--section {
-    padding: 1.8rem;
+    padding: 1.8rem 3rem 1.8rem 1.8rem;
     position: absolute;
     top: 1rem;
     left: 3%;
@@ -143,6 +147,20 @@ p {
     background: url(../img/work.jpg) no-repeat center center/cover; }
   .information-card__Education-pict {
     background: url(../img/Education.jpg) no-repeat center center/cover; }
+  .information-card__content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; }
+    .information-card__content-grid p {
+      -webkit-columns: 1;
+      /* Chrome, Safari, Opera */
+      -moz-columns: 1;
+      /* Firefox */
+      columns: 1; }
+    .information-card__content-grid span {
+      color: #7e7e7e;
+      display: block;
+      margin-bottom: 1rem; }
 
 .navigation {
   background-color: transparent;
@@ -274,6 +292,7 @@ p {
   .information-card {
     transform: scale(1, 1) translate(0, 0); }
     .information-card--section {
+      padding: 2rem;
       visibility: visible;
       transform: translate(0, 0); }
   .main-profile-card {
