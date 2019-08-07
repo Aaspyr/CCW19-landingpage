@@ -6,7 +6,7 @@
 
 html{
     font-size: 15px;
-    font-family: "Roboto Cn", sans-serif;
+    font-family: 'Merriweather', serif;
     color: #eee;
     width: 100vw;
 }
@@ -19,6 +19,11 @@ a{
 header{
     width: 100vw;
     height: 15vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
@@ -164,7 +169,7 @@ nav ul li a:hover::after{
     width: 90%;
     margin: 0 auto;
     height: 85vh;
-    font-family: 'Beth Ellen', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: 4rem;
     color:white;
 }
@@ -448,7 +453,7 @@ nav ul li a:hover::after{
 #my_description{
       width:55%;
       height: 70%; 
-      font-size:3rem;
+      font-size:2rem;
       background-color: #F4AC32;
       box-sizing: border-box;
       padding: 15px;
@@ -549,7 +554,7 @@ nav ul li a:hover::after{
 		font-size: 2.5rem;
 	}
 
-	.brand{
+	.name{
 		font-size: 5rem;
 	}
   
