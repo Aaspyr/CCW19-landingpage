@@ -12,6 +12,7 @@
   .information-card {
     transform: scale(1, 1) translate(0, 0);
     &--section {
+      padding: 2rem;
       visibility: visible;
       transform: translate(0, 0);
     }
